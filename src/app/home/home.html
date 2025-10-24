@@ -1,7 +1,40 @@
 <style>
-    
+    @media (max-width: 768px) {
+        .content {
+            scroll-snap-type: y mandatory;
+        }
+        #title_card {
+            /* Handle background image CSS */
+            background-image: url('/home_banner.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            /* Handle text CSS */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 2vh;
+        }
+        .block {
+            /* Handle snapping for block class elements */
+            scroll-snap-align: center;
+            width: 100vw;
+            height: 100vh;
+        }
+    }
+    .content {
+        background-color: bisque;
+    }
 </style>
 
-<div class="content">
-    Home Content
-</div>
+<section class="content">
+    <div class="block" id="title_card">
+        <h1>Gracelyn Isabel</h1>
+        <h1>Photography</h1>
+    </div>
+    <div class="block">
+        <h2>Testing scroll feature</h2>
+    </div>
+</section>
