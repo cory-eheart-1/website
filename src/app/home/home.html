@@ -1,8 +1,5 @@
 <style>
     @media (max-width: 768px) {
-        .content {
-            scroll-snap-type: y mandatory;
-        }
         #title_card {
             /* Handle background image CSS */
             background-image: url('/home_banner.jpg');
@@ -23,6 +20,9 @@
             width: 100vw;
             height: 100vh;
         }
+        .footer {
+            scroll-snap-align: end;
+        }
     }
     .content {
         background-color: bisque;
@@ -34,7 +34,14 @@
         <h1>Gracelyn Isabel</h1>
         <h1>Photography</h1>
     </div>
-    <div class="block">
-        <h2>Testing scroll feature</h2>
+    <div class="block" id="bio_card">
+        <h2>Small Bio Featured Here</h2>
     </div>
+    <div class="block" id="gallery_card">
+        <h2>Main 3 Galleries Plus Other Here</h2>
+    </div>
+    <div class="block" id="contact_card">
+        <h2>Contact Form (Need to decide) here</h2>
+    </div>
+    <div class="footer">Footer</div>
 </section>
