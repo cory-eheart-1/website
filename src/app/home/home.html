@@ -1,47 +1,36 @@
-<style>
-    @media (max-width: 768px) {
-        #title_card {
-            /* Handle background image CSS */
-            background-image: url('/home_banner.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-
-            /* Handle text CSS */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding-bottom: 2vh;
-        }
-        .block {
-            /* Handle snapping for block class elements */
-            scroll-snap-align: center;
-            width: 100vw;
-            height: 100vh;
-        }
-        .footer {
-            scroll-snap-align: end;
-        }
-    }
-    .content {
-        background-color: bisque;
-    }
-</style>
-
 <section class="content">
-    <div class="block" id="title_card">
-        <h1>Gracelyn Isabel</h1>
-        <h1>Photography</h1>
+    <div class="blurred">
+        <div class="block" id="title_card">
+            <h1>Gracelyn Isabel</h1>
+            <h1>Photography</h1>
+        </div>
     </div>
     <div class="block" id="bio_card">
         <h2>Small Bio Featured Here</h2>
     </div>
     <div class="block" id="gallery_card">
-        <h2>Main 3 Galleries Plus Other Here</h2>
+        <h2>Browse Galleries</h2>
+        <span class="gallery" id="zero">
+            <div>Portraits</div>
+        </span>
+        <span class="gallery" id="one">
+            <div>Events</div>
+        </span>
+        <span class="gallery" id="two">
+            <div>Nature</div>
+        </span>
+        <span class="gallery" id="three">
+            <div>See more . . . </div>
+        </span>
     </div>
     <div class="block" id="contact_card">
         <h2>Contact Form (Need to decide) here</h2>
     </div>
-    <div class="footer">Footer</div>
+    <div class="footer">
+        <p>Footer</p>
+        <p>Footer</p>
+        <p>Footer</p>
+        <p>Footer</p>
+        <p>Footer</p>
+    </div>
 </section>
